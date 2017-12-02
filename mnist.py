@@ -3,8 +3,8 @@ import struct
 
 def load_mnist_training(num):
     print("training data loading")
-    original_data_file = open('train-images',"rb")
-    label_file = open('train-labels',"rb")
+    original_data_file = open('mnist/train-images',"rb")
+    label_file = open('mnist/train-labels',"rb")
     data_buff = original_data_file.read()
     label_buff = label_file.read()
 
@@ -39,8 +39,8 @@ def load_mnist_training(num):
 
 def load_mnist_testing(num):
     print("testing data loading")
-    original_data_file = open('t10k-images',"rb")
-    label_file = open('t10k-labels',"rb")
+    original_data_file = open('mnist/t10k-images',"rb")
+    label_file = open('mnist/t10k-labels',"rb")
     data_buff = original_data_file.read()
     label_buff = label_file.read()
 
