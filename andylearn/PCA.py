@@ -1,3 +1,4 @@
+import numpy as np
 def PCA(data,dimensions):
     '''
     data is the original data set，rows are samples of data,columns are the features
@@ -22,4 +23,4 @@ def PCA(data,dimensions):
     sort_eig = sort_eig[:dimensions]
     principal_vec = np.mat(eig_vec[:,sort_eig])
     
-    return principal_vec, np.dot(data_zero, principal_vec)
+    return principal_vec, np.dot(data_zero, principal_vec), average
